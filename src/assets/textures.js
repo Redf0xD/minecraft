@@ -14,9 +14,13 @@ const woodTexture = new TextureLoader().load(woodImg)
 const logTexture = new TextureLoader().load(logImg)
 const groundTexture = new TextureLoader().load(grassImg)
 
-groundTexture.wrapS = RepeatWrapping
-groundTexture.wrapT = RepeatWrapping
-groundTexture.magFilter = NearestFilter
+const textures = [dirtTexture, grassTexture, glassTexture, woodTexture, logTexture, groundTexture]
+
+textures.forEach(texture => {
+  texture.wrapS = RepeatWrapping
+  texture.wrapT = RepeatWrapping
+  texture.magFilter = NearestFilter
+})
 
 export {
   dirtTexture,

@@ -19,4 +19,26 @@ html, body, #root{
   font-size: 2rem;
   font-weight: bold;
   text-shadow: #000 0 5px 5px;
+  opacity: 0.5;
+}
+
+.texture-selector{
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  transition: ease;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.texture-selector img{
+  width: 60px;
+  border: black 3px solid;
+  image-rendering: pixelated;
+}
+
+.texture-selector img.selected{
+  border: red 3px solid;
+  transition: ease-in;
 }

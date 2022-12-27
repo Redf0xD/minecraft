@@ -13,7 +13,7 @@ specifiers:
   standard: ^17.0.0
   three: ^0.146.0
   vite: ^3.2.3
-  zustand: ^4.1.4
+  zustand: ^4.1.5
 
 dependencies:
   '@react-three/cannon': 6.5.0_aj5kj473hsgheg4miwvuwybosy
